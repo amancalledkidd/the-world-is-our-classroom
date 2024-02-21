@@ -1,37 +1,14 @@
-/* Block component */
 .navbar {
-    &--light {
-      background-color: #f8f9fa; // Example for light variant
-      .navbar-brand {
-        color: #007bff; // Brand color
-        &:hover {
-          color: darken(#007bff, 10%);
-        }
-      }
-  
-      .navbar-toggler {
-        border-color: rgba(0, 0, 0, 0.1); // Toggler border
-        .navbar-toggler-icon {
-          // Icon specific styles if needed
-        }
-      }
-  
-      .navbar-nav {
-        .nav-item {
-          &.active {
-            .nav-link {
-              color: #007bff; // Active link color
-            }
-          }
-  
-          .nav-link {
-            color: #5a5a5a; // Default link color
-            &:hover {
-              color: darken(#5a5a5a, 10%);
-            }
-          }
-        }
-      }
-    }
-  }
-  
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   
+
+   &__items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8rem;
+   }
+}

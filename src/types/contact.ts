@@ -3,9 +3,12 @@ export type Contact = {
     email: string;
     phone: string;
     address: string;
+    socials: Social[];
     image?: string;
-    linkedin?: string;
-    instagram?: string;
-    facebook?: string;
-    twitter?: string;
+}
+
+export type Social = {
+    name: string;
+    link: string;
+    icon: string;
 }

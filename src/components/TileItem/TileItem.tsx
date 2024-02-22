@@ -4,11 +4,15 @@ type TileItemProps = {
     title?: string;
     content?: string;
     image?: string;
+    color?: "blue" | "green";
 }
 
-const TileItem = ({ title, content, image }: TileItemProps) => {
+const TileItem = ({ title, content, image, color }: TileItemProps) => {
+
+    const classColor = color ? `tile--${color}` : '';
+
     return (
-        <div className="tile">
+        <div className={`tile ${classColor}`}>
             {title && <h2 className='tile__header'>{title}</h2>}
             {content && <p className='tile__content'>{content}</p>}
             {image && <img src={image} alt={title} className='tile__img' />}

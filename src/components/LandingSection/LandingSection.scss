@@ -1,9 +1,12 @@
+@import "../../styles/variables.scss";
+
 .landing-section {
 
     margin: 0;
     padding: 0;
     width: 100%;
     box-sizing: border-box;
+    background-color: $clr-blue-primary-lt;
 
     &__image {
         width: 100%;

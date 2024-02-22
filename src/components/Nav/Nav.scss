@@ -1,9 +1,10 @@
 .navbar {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 1rem;
-   
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 100;
 
    &__items {
       display: flex;
